@@ -22,7 +22,7 @@ final class Version20240131201048 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql('DROP INDEX transactions_reason_index');
         $this->addSql('DROP INDEX transactions_creted_at_index');
-        $this->addSql('CREATE INDEX transactions_search_index ON transactions (created_at, reason)');
+        $this->addSql('CREATE INDEX transactions_search_index ON transactions (date(created_at), reason)');
     }
 
     public function down(Schema $schema): void

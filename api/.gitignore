@@ -1,1 +1,4 @@
 /vendor/
+/var/log/
+/var/cache/
+/var/test/

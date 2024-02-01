@@ -31,6 +31,7 @@ curl --location --request GET 'localhost:8080/v1/wallet/balance?id=3' \
     "reason": "stock"
 }'
 ```
+amount(int) в центах или копейках
 
 ### Update balance
 ```angular2html
